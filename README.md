@@ -30,3 +30,5 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+Redeploy trigger: 2026-07-08T20:38:24.654112
