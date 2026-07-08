@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="home-card">
       <h1 style={{ color: "var(--matrix-neon-green)" }}>
-        Bienvenido a MatrixWiki
+        Bienvenido a Wiki Linux Server
       </h1>
       <p style={{ opacity: 0.8 }}>
         {pages.length === 0

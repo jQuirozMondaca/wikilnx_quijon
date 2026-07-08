@@ -5,4 +5,4 @@
 **Estudiante:** Jonathan Quiroz Mondaca
 **Código de Identificación:** quijon
 **Repositorio GitHub:** [https://github.com/jQuirozMondaca/wikilnx_quijon]
-**URL del sitio en Vercel:** [Ingresa tu URL aquí]
+**URL del sitio en Vercel:** [https://wikilnx-quijon.vercel.app/]

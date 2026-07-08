@@ -24,8 +24,8 @@ Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Se
     title: "Bloque A · Software libre y licencias",
     content: `# Bloque A · Software libre y licencias
 
-![Licencias](doc_quijon/img_quijon/222723.png)
-![Preámbulo GPL](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20222819.png)
+![Licencias](/img_quijon/222723.png)
+![Preámbulo GPL](/img_quijon/Captura%20de%20pantalla%202026-07-07%20222819.png)
 
 **¿Qué es el Software Libre?**
 Es aquel software que garantiza a los usuarios las cuatro libertades fundamentales: la libertad de ejecutar el programa para cualquier propósito, estudiar cómo funciona y modificarlo, redistribuir copias y distribuir versiones modificadas a terceros. No se refiere necesariamente a precio (gratis), sino a la libertad sobre el código fuente.
@@ -44,12 +44,12 @@ Ubuntu es un sistema operativo GNU/Linux, lo que significa que es un agregado de
     title: "Bloque B · Instalación y configuración básica",
     content: `# Bloque B · Instalación y configuración básica
 
-![Hardware VM](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205843.png)
-![Reenvío de Puertos NAT](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205903.png)
-![Hostname](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
-![IP a](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
-![Apt Update](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20210426.png)
-![UFW Status](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20210441.png)
+![Hardware VM](/img_quijon/Captura%20de%20pantalla%202026-07-06%20205843.png)
+![Reenvío de Puertos NAT](/img_quijon/Captura%20de%20pantalla%202026-07-06%20205903.png)
+![Hostname](/img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
+![IP a](/img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
+![Apt Update](/img_quijon/Captura%20de%20pantalla%202026-07-06%20210426.png)
+![UFW Status](/img_quijon/Captura%20de%20pantalla%202026-07-07%20210441.png)
 
 **¿Qué es NAT?**
 NAT (Network Address Translation) es un mecanismo que permite a los dispositivos de una red privada (como nuestra VM) salir a Internet enmascarando sus direcciones IP internas detrás de una única dirección IP pública compartida por el router (o el anfitrión, en este caso).
@@ -67,9 +67,9 @@ Como la VM está "oculta" detrás del NAT, desde el exterior no se puede iniciar
     title: "Bloque C · Permisos por línea de comandos",
     content: `# Bloque C · Permisos por línea de comandos
 
-![Creación y Permisos Base](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140504.png)
-![Modificación chmod/chown](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20141142.png)
-![Permisos Especiales](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144443.png)
+![Creación y Permisos Base](/img_quijon/Captura%20de%20pantalla%202026-07-07%20140504.png)
+![Modificación chmod/chown](/img_quijon/Captura%20de%20pantalla%202026-07-07%20141142.png)
+![Permisos Especiales](/img_quijon/Captura%20de%20pantalla%202026-07-07%20144443.png)
 
 **Traducción de permisos (-rw-rw-r--):**
 Indica que el archivo es regular (-). El dueño (user) tiene permisos de lectura y escritura (rw-). El grupo asignado (group) también tiene lectura y escritura (rw-). Cualquier otro usuario (others) solo tiene permiso de lectura (r--).
@@ -92,10 +92,10 @@ Cambia el propietario (dueño) y/o el grupo al que pertenece un archivo o direct
     title: "Bloque D · Gestores de paquetes (apt)",
     content: `# Bloque D · Gestores de paquetes (apt)
 
-![Apt Search](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144726.png)
-![Apt Show](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145314.png)
-![Apt Install](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145740.png)
-![Systemctl Nginx](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20205916.png)
+![Apt Search](/img_quijon/Captura%20de%20pantalla%202026-07-07%20144726.png)
+![Apt Show](/img_quijon/Captura%20de%20pantalla%202026-07-07%20145314.png)
+![Apt Install](/img_quijon/Captura%20de%20pantalla%202026-07-07%20145740.png)
+![Systemctl Nginx](/img_quijon/Captura%20de%20pantalla%202026-07-07%20205916.png)
 
 **Flujo de gestión (update -> search -> show -> install):**
 
@@ -112,9 +112,9 @@ Ante la necesidad de monitorear procesos, evaluamos alternativas como top (nativ
     title: "Bloque E · nginx y despliegue de tu sitio",
     content: `# Bloque E · nginx y despliegue de tu sitio
 
-![Instalación Node/Git](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20153540.png)
-![Clonación Repositorio](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20211115.png)
-![Nginx Funcionando](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20221533.png)
+![Instalación Node/Git](/img_quijon/Captura%20de%20pantalla%202026-07-07%20153540.png)
+![Clonación Repositorio](/img_quijon/Captura%20de%20pantalla%202026-07-07%20211115.png)
+![Nginx Funcionando](/img_quijon/Captura%20de%20pantalla%202026-07-07%20221533.png)
 
 _(Añadir aquí la captura de \`sudo nginx -t\` con nombre test_nginx.png cuando la tengas)_
 _(Añadir aquí la captura de tu sitio web cargando en el navegador con nombre sitio_react.png cuando la tengas)_`,

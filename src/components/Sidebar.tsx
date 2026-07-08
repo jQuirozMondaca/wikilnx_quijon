@@ -16,11 +16,6 @@ export default function Sidebar() {
             </Link>
           </li>
         ))}
-        <li>
-          <Link className="sidebar-link sidebar-link--new" to="/new">
-            ➕ Nueva página
-          </Link>
-        </li>
       </ul>
     </nav>
   );
