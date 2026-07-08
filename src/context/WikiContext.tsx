@@ -3,9 +3,11 @@ import {
   useContext,
   useReducer,
   useEffect,
-  ReactNode,
+  type ReactNode,
 } from "react";
-import { WikiPage, loadPages, savePages } from "../utils/storage";
+import { loadPages, savePages } from "../utils/storage";
+import type { WikiPage } from "../utils/storage";
+import { INITIAL_PAGES } from "../data/initialPages";
 
 type State = { pages: WikiPage[] };
 
@@ -14,7 +16,19 @@ type Action =
   | { type: "UPDATE_PAGE"; payload: WikiPage }
   | { type: "DELETE_PAGE"; payload: string };
 
-const initialState: State = { pages: loadPages() };
+function getInitialPages(): WikiPage[] {
+  const storedPages = loadPages();
+  if (storedPages.length > 0) {
+    return storedPages;
+  }
+  return INITIAL_PAGES.map(({ slug, title, content }) => ({
+    slug,
+    title,
+    content,
+  }));
+}
+
+const initialState: State = { pages: getInitialPages() };
 
 function wikiReducer(state: State, action: Action): State {
   switch (action.type) {

@@ -29,6 +29,18 @@ export default function MarkdownRenderer({ content }: { content: string }) {
           a: ({ node, ...props }) => (
             <a style={{ color: "var(--matrix-neon-green)" }} {...props} />
           ),
+          img: ({ node, ...props }) => (
+            <img
+              {...props}
+              style={{
+                maxWidth: "100%",
+                borderRadius: "8px",
+                border: "1px solid var(--matrix-dim-green)",
+                margin: "1rem 0",
+                display: "block",
+              }}
+            />
+          ),
           code: ({ node, ...props }) => (
             <code
               style={{

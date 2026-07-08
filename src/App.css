@@ -16,7 +16,9 @@
 }
 
 body {
-    background-color: var(--matrix-black);
+    background:
+        radial-gradient(circle at top, rgba(0, 255, 65, 0.12), transparent 30%),
+        var(--matrix-black);
     color: var(--matrix-text);
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
@@ -36,7 +38,7 @@ a:hover {
 button,
 input,
 textarea {
-    background: var(--matrix-dark-green);
+    background: rgba(0, 8, 0, 0.95);
     color: var(--matrix-neon-green);
     border: 1px solid var(--matrix-border);
     font-family: inherit;
@@ -164,6 +166,8 @@ textarea:focus {
     font-size: 1.6rem;
     color: var(--matrix-neon-green);
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
 .sidebar-title {
@@ -247,6 +251,17 @@ textarea:focus {
     border-radius: 10px;
     padding: 1.25rem;
     box-shadow: 0 0 20px rgba(0, 255, 65, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-card::before,
+.view-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.06), transparent);
+    pointer-events: none;
 }
 
 .home-list {
@@ -327,6 +342,17 @@ textarea:focus {
 .markdown-body h2,
 .markdown-body h3 {
     color: var(--matrix-neon-green);
+    margin-bottom: 0.6rem;
+}
+
+.markdown-body p,
+.markdown-body li {
+    margin-bottom: 0.6rem;
+}
+
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
 }
 
 .markdown-body code {

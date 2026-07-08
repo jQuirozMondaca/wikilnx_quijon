@@ -1,0 +1,132 @@
+export interface InitialWikiPage {
+  slug: string;
+  title: string;
+  content: string;
+}
+
+export const INITIAL_PAGES: InitialWikiPage[] = [
+  {
+    slug: "portada",
+    title: "Portada",
+    content: `# Laboratorio Unidad 3 - Administración de Linux Server
+
+**Asignatura:** Sistemas Operativos (TI3V35)
+**Docente:** Rubén Schnettler
+**Estudiante:** Jonathan Quiroz Mondaca
+**Código de Identificación:** quijon
+**Repositorio GitHub:** [https://github.com/jQuirozMondaca/wikilnx_quijon](https://github.com/jQuirozMondaca/wikilnx_quijon)
+**URL del sitio en Vercel:** [Ingresa tu URL aquí](#)
+
+Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Server en un formato navegable y temático inspirado en Matrix.`,
+  },
+  {
+    slug: "bloque-a-software-libre-y-licencias",
+    title: "Bloque A · Software libre y licencias",
+    content: `# Bloque A · Software libre y licencias
+
+![Licencias](doc_quijon/img_quijon/222723.png)
+![Preámbulo GPL](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20222819.png)
+
+**¿Qué es el Software Libre?**
+Es aquel software que garantiza a los usuarios las cuatro libertades fundamentales: la libertad de ejecutar el programa para cualquier propósito, estudiar cómo funciona y modificarlo, redistribuir copias y distribuir versiones modificadas a terceros. No se refiere necesariamente a precio (gratis), sino a la libertad sobre el código fuente.
+
+**Diferencia entre Copyleft (GPL), Permisivas (MIT/BSD/Apache) y Propietario:**
+
+- **Copyleft (GPL):** Garantiza que cualquier trabajo derivado u obra modificada deba distribuirse obligatoriamente bajo los mismos términos de libertad. Impide que el código se cierre en futuros proyectos.
+- **Permisivas (MIT/BSD/Apache):** Otorgan libertades similares para usar y modificar, pero no obligan a que las obras derivadas mantengan la misma licencia. Permiten integrar código libre dentro de software propietario de código cerrado.
+- **Propietario:** El código fuente es cerrado, privativo y pertenece exclusivamente a su autor o empresa. Se imponen severas restricciones legales sobre su uso, copia y modificación.
+
+**¿Bajo qué tipo de licencia está Ubuntu?**
+Ubuntu es un sistema operativo GNU/Linux, lo que significa que es un agregado de miles de paquetes de software. Su componente central (el kernel de Linux) está bajo licencia copyleft estricta **GPLv2**. Sin embargo, la distribución en sí contiene una mezcla de software bajo licencias GPL, permisivas e incluso algunos controladores propietarios necesarios para el hardware.`,
+  },
+  {
+    slug: "bloque-b-instalacion-y-configuracion-basica",
+    title: "Bloque B · Instalación y configuración básica",
+    content: `# Bloque B · Instalación y configuración básica
+
+![Hardware VM](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205843.png)
+![Reenvío de Puertos NAT](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205903.png)
+![Hostname](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
+![IP a](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
+![Apt Update](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20210426.png)
+![UFW Status](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20210441.png)
+
+**¿Qué es NAT?**
+NAT (Network Address Translation) es un mecanismo que permite a los dispositivos de una red privada (como nuestra VM) salir a Internet enmascarando sus direcciones IP internas detrás de una única dirección IP pública compartida por el router (o el anfitrión, en este caso).
+
+**¿Para qué sirve el reenvío de puertos (Port Forwarding)?**
+Como la VM está "oculta" detrás del NAT, desde el exterior no se puede iniciar una conexión hacia ella. El reenvío de puertos soluciona esto mapeando un puerto específico del anfitrión (ej. 8080) y redirigiendo todo su tráfico hacia un puerto específico del servidor invitado (ej. 80), permitiendo el acceso a servicios internos como SSH o HTTP.
+
+**DHCP vs IP Fija:**
+
+- **DHCP:** Protocolo que asigna direcciones IP, máscaras de red y puertas de enlace de forma automática y dinámica cada vez que el equipo se conecta.
+- **IP Fija (Estática):** Es una dirección configurada manualmente que nunca cambia. Es **fundamental para servidores** (como Nginx), ya que garantiza que los clientes y servicios DNS siempre encuentren el servidor en la misma ruta lógica, evitando caídas de servicio por caducidad de la concesión DHCP.`,
+  },
+  {
+    slug: "bloque-c-permisos-por-linea-de-comandos",
+    title: "Bloque C · Permisos por línea de comandos",
+    content: `# Bloque C · Permisos por línea de comandos
+
+![Creación y Permisos Base](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140504.png)
+![Modificación chmod/chown](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20141142.png)
+![Permisos Especiales](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144443.png)
+
+**Traducción de permisos (-rw-rw-r--):**
+Indica que el archivo es regular (-). El dueño (user) tiene permisos de lectura y escritura (rw-). El grupo asignado (group) también tiene lectura y escritura (rw-). Cualquier otro usuario (others) solo tiene permiso de lectura (r--).
+
+**chmod numérico vs simbólico:**
+
+- **Numérico (ej. 644):** Utiliza una suma octal donde Lectura (r) = 4, Escritura (w) = 2, Ejecución (x) = 1. Es rápido para establecer todos los permisos de golpe.
+- **Simbólico (ej. u+x, go-rwx):** Utiliza letras para Usuario (u), Grupo (g) y Otros (o), añadiendo (+) o quitando (-) permisos específicos (r, w, x). Es ideal para modificar un solo parámetro sin afectar el resto.
+
+**¿Qué hace chown?**
+Cambia el propietario (dueño) y/o el grupo al que pertenece un archivo o directorio en el sistema.
+
+**Permisos especiales (setgid y sticky bit):**
+
+- **setgid (letra 's' en el grupo, ej. drwxrwsr-x):** Cuando se aplica a un directorio compartido, obliga a que cualquier archivo nuevo creado dentro de él herede el grupo del directorio, en lugar del grupo principal del usuario que lo creó. Ideal para trabajo colaborativo.
+- **sticky bit (letra 't' en otros, ej. en /tmp):** Evita el caos en directorios públicos. Garantiza que solo el propietario de un archivo (o el usuario root) pueda renombrar o eliminar ese archivo, incluso si otros usuarios tienen permisos de escritura totales sobre el directorio contenedor.`,
+  },
+  {
+    slug: "bloque-d-gestores-de-paquetes-apt",
+    title: "Bloque D · Gestores de paquetes (apt)",
+    content: `# Bloque D · Gestores de paquetes (apt)
+
+![Apt Search](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144726.png)
+![Apt Show](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145314.png)
+![Apt Install](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145740.png)
+![Systemctl Nginx](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20205916.png)
+
+**Flujo de gestión (update -> search -> show -> install):**
+
+1. **update:** Sincroniza la lista local del sistema con los repositorios remotos para conocer las últimas versiones disponibles.
+2. **search:** Permite buscar un paquete o herramienta específica por su nombre o descripción dentro del catálogo actualizado.
+3. **show:** Muestra los metadatos técnicos del paquete antes de instalarlo (versión, tamaño, dependencias). Fundamental para la factibilidad.
+4. **install:** Descarga los binarios, resuelve e instala automáticamente las dependencias necesarias y configura el software en el sistema.
+
+**Criterio de factibilidad:**
+Ante la necesidad de monitorear procesos, evaluamos alternativas como top (nativo) y htop (interactivo). Tras usar apt show htop, confirmamos que su peso de descarga es mínimo (aprox 177 kB) y sus dependencias son librerías estándar. Por su excelente relación costo/beneficio operativo, htop resulta la alternativa más factible.`,
+  },
+  {
+    slug: "bloque-e-nginx-y-despliegue-de-tu-sitio",
+    title: "Bloque E · nginx y despliegue de tu sitio",
+    content: `# Bloque E · nginx y despliegue de tu sitio
+
+![Instalación Node/Git](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20153540.png)
+![Clonación Repositorio](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20211115.png)
+![Nginx Funcionando](doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20221533.png)
+
+_(Añadir aquí la captura de \`sudo nginx -t\` con nombre test_nginx.png cuando la tengas)_
+_(Añadir aquí la captura de tu sitio web cargando en el navegador con nombre sitio_react.png cuando la tengas)_`,
+  },
+  {
+    slug: "bitacora-de-uso-de-ia",
+    title: "Bitácora de uso de IA",
+    content: `# Bitácora de uso de IA
+
+**Herramienta utilizada:** Gemini
+**Propósito:**
+
+Esta wiki fue creada para organizar el contenido de laboratorio de manera clara y navegable.`,
+  },
+];
