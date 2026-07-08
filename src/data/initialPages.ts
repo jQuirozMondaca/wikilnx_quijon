@@ -25,7 +25,7 @@ Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Se
     content: `# Bloque A · Software libre y licencias
 
 ![Licencias](/img_quijon/222723.png)
-![Preámbulo GPL](/img_quijon/Captura-de-pantalla-2026-07-07-222819.png)
+![Preámbulo GPL](/img_quijon/222819.png)
 
 **¿Qué es el Software Libre?**
 Es aquel software que garantiza a los usuarios las cuatro libertades fundamentales: la libertad de ejecutar el programa para cualquier propósito, estudiar cómo funciona y modificarlo, redistribuir copias y distribuir versiones modificadas a terceros. No se refiere necesariamente a precio (gratis), sino a la libertad sobre el código fuente.
@@ -44,8 +44,8 @@ Ubuntu es un sistema operativo GNU/Linux, lo que significa que es un agregado de
     title: "Bloque B · Instalación y configuración básica",
     content: `# Bloque B · Instalación y configuración básica
 
-![Hardware VM](/img_quijon/Captura-de-pantalla-2026-07-06-205843.png)
-![Reenvío de Puertos NAT](/img_quijon/Captura-de-pantalla-2026-07-06-205903.png)
+![Hardware VM](/img_quijon/205843.png)
+![Reenvío de Puertos NAT](/img_quijon/205903.png)
 ![Hostname](/img_quijon/Captura-de-pantalla-2026-07-07-140021.png)
 ![IP a](/img_quijon/Captura-de-pantalla-2026-07-07-140049.png)
 ![Apt Update](/img_quijon/Captura-de-pantalla-2026-07-06-210426.png)
@@ -112,7 +112,7 @@ Ante la necesidad de monitorear procesos, evaluamos alternativas como top (nativ
     title: "Bloque E · nginx y despliegue de tu sitio",
     content: `# Bloque E · nginx y despliegue de tu sitio
 
-![Instalación Node/Git](/img_quijon/Captura-20de-20pantalla-202026-07-07-20153540.png)
+![Instalación Node/Git](/img_quijon/Captura-de-pantalla-2026-07-07-153540.png)
 ![Clonación Repositorio](/img_quijon/Captura-de-pantalla-2026-07-07-211115.png)
 ![Nginx Funcionando](/img_quijon/Captura-de-pantalla-2026-07-07-221533.png)
 
