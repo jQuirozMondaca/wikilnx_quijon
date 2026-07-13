@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <div className="container app-layout">
       <aside className="sidebar-panel">
         <Link to="/" className="sidebar-brand">
-          ⌨️ MatrixWiki
+          ⌨️ Wiki Quijon
         </Link>
         <SearchBar />
         <Sidebar />
