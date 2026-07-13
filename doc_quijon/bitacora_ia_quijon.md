@@ -1,15 +1,18 @@
 # Bitácora de uso de IA
 
 **Herramienta utilizada:** Gemini
+
 **Propósito:**
-en tender y comprender con mas detalles la guía realizada
 
-eres un desarrollador senior con 20 años de experiencia.
-tu tarea es desarrollar un sitio con las tecnologias react vite, dandole la temitica y paleta de colores de matrix
-la palicacion debe ser un wiki que muestre la informcion que esta ubicada en la carpeta doc_quijon.
+Esta wiki fue creada para organizar el contenido de laboratorio de manera clara y navegable.
 
-pasandole la guia le solicite
-explimena de manera completa y detallada todos los comandos que estan plasmados en la guía para tener una mayor comprencion de lo que estoy realizando
+**Prompts utilizados:**
 
-una ves desarrollada la guía
-corrige todas faltas ortograficas que se encuentren y dale un tono tecnico al informe
+1. Se solicitó un desarrollador senior con 20 años de experiencia para:
+   - Desarrollar un sitio con tecnologías React y Vite
+   - Aplicar temática y paleta de colores de Matrix
+   - Crear una aplicación wiki que muestre la información ubicada en la carpeta doc_quijon
+
+2. Se pidió explicación completa y detallada de todos los comandos plasmados en la guía para mayor comprensión.
+
+3. Se solicitó corrección de faltas ortográficas y tono técnico en el informe.
