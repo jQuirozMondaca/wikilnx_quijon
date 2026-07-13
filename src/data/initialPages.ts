@@ -6,8 +6,8 @@ export interface InitialWikiPage {
 
 export const INITIAL_PAGES: InitialWikiPage[] = [
   {
-    slug: "portada",
-    title: "Portada",
+    slug: "inicio",
+    title: "Inicio",
     content: `# Laboratorio Unidad 3 - Administración de Linux Server
 
 **Asignatura:** Sistemas Operativos (TI3V35)
@@ -20,9 +20,9 @@ export const INITIAL_PAGES: InitialWikiPage[] = [
 Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Server en un formato navegable y temático inspirado en Matrix.`,
   },
   {
-    slug: "bloque-a-software-libre-y-licencias",
-    title: "Bloque A · Software libre y licencias",
-    content: `# Bloque A · Software libre y licencias
+    slug: "licencias",
+    title: "Software libre y licencias (3.1.1)",
+    content: `# Software libre y licencias
 
 ![Licencias](/img_quijon/222723.png)
 ![Preámbulo GPL](/img_quijon/222819.png)
@@ -40,9 +40,9 @@ Es aquel software que garantiza a los usuarios las cuatro libertades fundamental
 Ubuntu es un sistema operativo GNU/Linux, lo que significa que es un agregado de miles de paquetes de software. Su componente central (el kernel de Linux) está bajo licencia copyleft estricta **GPLv2**. Sin embargo, la distribución en sí contiene una mezcla de software bajo licencias GPL, permisivas e incluso algunos controladores propietarios necesarios para el hardware.`,
   },
   {
-    slug: "bloque-b-instalacion-y-configuracion-basica",
-    title: "Bloque B · Instalación y configuración básica",
-    content: `# Bloque B · Instalación y configuración básica
+    slug: "instalacion",
+    title: "Instalación y configuración básica (3.1.2)",
+    content: `# Instalación y configuración básica
 
 ![Hardware VM](/img_quijon/205843.png)
 ![Reenvío de Puertos NAT](/img_quijon/205903.png)
@@ -63,9 +63,9 @@ Como la VM está "oculta" detrás del NAT, desde el exterior no se puede iniciar
 - **IP Fija (Estática):** Es una dirección configurada manualmente que nunca cambia. Es **fundamental para servidores** (como Nginx), ya que garantiza que los clientes y servicios DNS siempre encuentren el servidor en la misma ruta lógica, evitando caídas de servicio por caducidad de la concesión DHCP.`,
   },
   {
-    slug: "bloque-c-permisos-por-linea-de-comandos",
-    title: "Bloque C · Permisos por línea de comandos",
-    content: `# Bloque C · Permisos por línea de comandos
+    slug: "permisos",
+    title: "Permisos por línea de comandos (3.1.3)",
+    content: `# Permisos por línea de comandos
 
 ![Creación y Permisos Base](/img_quijon/Captura-de-pantalla-2026-07-07-140504.png)
 ![Modificación chmod/chown](/img_quijon/Captura-de-pantalla-2026-07-07-141142.png)
@@ -88,9 +88,9 @@ Cambia el propietario (dueño) y/o el grupo al que pertenece un archivo o direct
 - **sticky bit (letra 't' en otros, ej. en /tmp):** Evita el caos en directorios públicos. Garantiza que solo el propietario de un archivo (o el usuario root) pueda renombrar o eliminar ese archivo, incluso si otros usuarios tienen permisos de escritura totales sobre el directorio contenedor.`,
   },
   {
-    slug: "bloque-d-gestores-de-paquetes-apt",
-    title: "Bloque D · Gestores de paquetes (apt)",
-    content: `# Bloque D · Gestores de paquetes (apt)
+    slug: "paquetes",
+    title: "Gestores de paquetes (apt) (3.1.4)",
+    content: `# Gestores de paquetes (apt)
 
 ![Apt Search](/img_quijon/Captura-de-pantalla-2026-07-07-144726.png)
 ![Apt Show](/img_quijon/Captura-de-pantalla-2026-07-07-145314.png)
@@ -108,9 +108,9 @@ Cambia el propietario (dueño) y/o el grupo al que pertenece un archivo o direct
 Ante la necesidad de monitorear procesos, evaluamos alternativas como top (nativo) y htop (interactivo). Tras usar apt show htop, confirmamos que su peso de descarga es mínimo (aprox 177 kB) y sus dependencias son librerías estándar. Por su excelente relación costo/beneficio operativo, htop resulta la alternativa más factible.`,
   },
   {
-    slug: "bloque-e-nginx-y-despliegue-de-tu-sitio",
-    title: "Bloque E · nginx y despliegue de tu sitio",
-    content: `# Bloque E · nginx y despliegue de tu sitio
+    slug: "nginx",
+    title: "nginx y despliegue de tu sitio (3.1.4)",
+    content: `# nginx y despliegue de tu sitio
 
 ![Instalación Node/Git](/img_quijon/Captura-de-pantalla-2026-07-07-153540.png)
 ![Clonación Repositorio](/img_quijon/Captura-de-pantalla-2026-07-07-211115.png)
@@ -120,8 +120,8 @@ _(Añadir aquí la captura de \`sudo nginx -t\` con nombre test_nginx.png cuando
 _(Añadir aquí la captura de tu sitio web cargando en el navegador con nombre sitio_react.png cuando la tengas)_`,
   },
   {
-    slug: "bitacora-de-uso-de-ia",
-    title: "Bitácora de uso de IA",
+    slug: "prompts",
+    title: "Bitácora de uso de IA (Transversal)",
     content: `# Bitácora de uso de IA
 
 **Herramienta utilizada:** Gemini
@@ -135,10 +135,10 @@ Esta wiki fue creada para organizar el contenido de laboratorio de manera clara 
 1. Se solicitó un desarrollador senior con 20 años de experiencia para:
    - Desarrollar un sitio con tecnologías React y Vite
    - Aplicar temática y paleta de colores de Matrix
-   - Crear una aplicación wiki que muestre la información ubicada en la carpeta doc_quijon
+   - Crear una aplicación wiki que muestre la información ubicada en la carpeta docs_quijon
 
 2. Se pidió explicación completa y detallada de todos los comandos plasmados en la guía para mayor comprensión.
 
 3. Se solicitó corrección de faltas ortográficas y tono técnico en el informe.`,
-  }
+  },
 ];

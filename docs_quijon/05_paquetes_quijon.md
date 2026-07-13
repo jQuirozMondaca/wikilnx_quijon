@@ -1,9 +1,9 @@
-# Bloque D · Gestores de paquetes (apt)
+# Gestores de paquetes (apt)
 
-![Apt Search](../doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144726.png)
-![Apt Show](../doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145314.png)
-![Apt Install](../doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20145740.png)
-![Systemctl Nginx](../doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20205916.png)
+![Apt Search](img_quijon/Captura%20de%20pantalla%202026-07-07%20144726.png)
+![Apt Show](img_quijon/Captura%20de%20pantalla%202026-07-07%20145314.png)
+![Apt Install](img_quijon/Captura%20de%20pantalla%202026-07-07%20145740.png)
+![Systemctl Nginx](img_quijon/Captura%20de%20pantalla%202026-07-07%20205916.png)
 
 **Flujo de gestión (update -> search -> show -> install):**
 
