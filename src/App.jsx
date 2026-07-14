@@ -27,6 +27,15 @@ const imageFiles = import.meta.glob(
   },
 );
 
+const imageAssets = Object.entries(imageFiles).reduce((map, [path, src]) => {
+  const basename = path.split("/").pop();
+  if (!basename) return map;
+  map[basename] = src;
+  const decoded = decodeURIComponent(basename);
+  if (decoded !== basename) map[decoded] = src;
+  return map;
+}, {});
+
 function getTitle(markdown) {
   const match = markdown.match(/^#\s+(.+)$/m);
   return match ? match[1].trim() : "Documento sin título";
@@ -288,7 +297,7 @@ function App() {
           </div>
           <div className="article-body">
             {selectedDoc
-              ? renderMarkdown(selectedDoc.content, imageFiles)
+              ? renderMarkdown(selectedDoc.content, imageAssets)
               : null}
           </div>
         </section>
