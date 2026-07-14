@@ -45,11 +45,14 @@ function getSummary(markdown) {
   const paragraphs = markdown
     .split(/\n{2,}/)
     .map((block) => block.trim())
-    .filter((block) => block && !block.startsWith("#"));
+    .filter(
+      (block) =>
+        block && !block.startsWith("#") && !/^!\[.*\]\(.*\)$/.test(block),
+    );
 
   const firstParagraph = paragraphs.find((block) => !/^[-*]\s/.test(block));
   return firstParagraph
-    ? firstParagraph.replace(/[#*_`]+/g, "").slice(0, 140)
+    ? firstParagraph.replace(/[#*_`!\[\]()]+/g, "").slice(0, 140)
     : "Contenido del laboratorio";
 }
 
@@ -308,4 +311,3 @@ function App() {
 }
 
 export default App;
-
