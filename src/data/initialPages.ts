@@ -5,6 +5,7 @@ export interface InitialWikiPage {
 }
 
 export const INITIAL_PAGES: InitialWikiPage[] = [
+  // Páginas de contenido del laboratorio Linux Server
   {
     slug: "inicio",
     title: "Inicio",
