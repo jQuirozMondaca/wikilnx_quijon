@@ -7,4 +7,4 @@
 **Repositorio GitHub:** https://github.com/jQuirozMondaca/wikilnx_quijon
 **URL del sitio en Vercel:** https://wikilnx-quijon.vercel.app/
 
-Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Server en un formato navegable y temático inspirado en Matrix.
+Esta wiki reúne los contenidos de la unidad 3 sobre administración de Linux Server en un formato navegable y temático inspirado en Macross.
