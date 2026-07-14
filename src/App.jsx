@@ -240,8 +240,9 @@ const docs = Object.entries(markdownFiles)
   .sort((a, b) => a.id.localeCompare(b.id));
 
 function App() {
-  const [activeDoc, setActiveDoc] = useState(docs[0]?.id ?? "");
-  const selectedDoc = docs.find((doc) => doc.id === activeDoc) ?? docs[0];
+  const initialDocId = docs[0]?.id || "";
+  const [activeDoc, setActiveDoc] = useState(initialDocId);
+  const selectedDoc = docs.find((doc) => doc.id === activeDoc) || docs[0];
 
   return (
     <div className="wiki-shell">
