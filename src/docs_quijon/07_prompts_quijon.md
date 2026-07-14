@@ -19,3 +19,5 @@ Esta wiki fue creada para organizar el contenido de laboratorio de manera clara 
 3. Se solicitó corrección de faltas ortográficas y tono técnico en el informe.
 
 4. se solisito modificar el proyecto completo a raiz de que multiples fachas se reciclaron imagenes de la versión anterior
+
+5. por recomendecion de la ia se movio la carpeta doc_quijon a src por conflicto en deploy de vercel.

@@ -1,26 +1,26 @@
 import { createElement, useState } from "react";
 import "./App.css";
 
-import intro from "../docs_quijon/01_inicio_quijon.md?raw";
-import licenses from "../docs_quijon/02_licencias_quijon.md?raw";
-import installation from "../docs_quijon/03_instalacion_quijon.md?raw";
-import permissions from "../docs_quijon/04_permisos_quijon.md?raw";
-import packages from "../docs_quijon/05_paquetes_quijon.md?raw";
-import nginx from "../docs_quijon/06_nginx_quijon.md?raw";
-import prompts from "../docs_quijon/07_prompts_quijon.md?raw";
+import intro from "./docs_quijon/01_inicio_quijon.md?raw";
+import licenses from "./docs_quijon/02_licencias_quijon.md?raw";
+import installation from "./docs_quijon/03_instalacion_quijon.md?raw";
+import permissions from "./docs_quijon/04_permisos_quijon.md?raw";
+import packages from "./docs_quijon/05_paquetes_quijon.md?raw";
+import nginx from "./docs_quijon/06_nginx_quijon.md?raw";
+import prompts from "./docs_quijon/07_prompts_quijon.md?raw";
 
 const markdownFiles = {
-  "../docs_quijon/01_inicio_quijon.md": intro,
-  "../docs_quijon/02_licencias_quijon.md": licenses,
-  "../docs_quijon/03_instalacion_quijon.md": installation,
-  "../docs_quijon/04_permisos_quijon.md": permissions,
-  "../docs_quijon/05_paquetes_quijon.md": packages,
-  "../docs_quijon/06_nginx_quijon.md": nginx,
-  "../docs_quijon/07_prompts_quijon.md": prompts,
+  "./docs_quijon/01_inicio_quijon.md": intro,
+  "./docs_quijon/02_licencias_quijon.md": licenses,
+  "./docs_quijon/03_instalacion_quijon.md": installation,
+  "./docs_quijon/04_permisos_quijon.md": permissions,
+  "./docs_quijon/05_paquetes_quijon.md": packages,
+  "./docs_quijon/06_nginx_quijon.md": nginx,
+  "./docs_quijon/07_prompts_quijon.md": prompts,
 };
 
 const imageFiles = import.meta.glob(
-  "../docs_quijon/img_quijon/*.{png,jpg,jpeg,webp}",
+  "./docs_quijon/img_quijon/*.{png,jpg,jpeg,webp}",
   {
     eager: true,
     import: "default",
