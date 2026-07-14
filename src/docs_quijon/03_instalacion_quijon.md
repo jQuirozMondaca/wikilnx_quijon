@@ -1,7 +1,7 @@
 # Instalación y configuración básica
 
-![Hardware VM](../docs_quijon/img_quijon/205843.png)
-![Reenvío de Puertos NAT](../docs_quijon/img_quijon/205903.png)
+![Hardware VM](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205843.png)
+![Reenvío de Puertos NAT](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-06%20205903.png)
 ![Hostname](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
 ![IP a](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
 ![Apt Update](../docs_quijon//img_quijon/Captura%20de%20pantalla%202026-07-06%20210426.png)
