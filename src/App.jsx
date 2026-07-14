@@ -52,7 +52,12 @@ function getSummary(markdown) {
 
   const firstParagraph = paragraphs.find((block) => !/^[-*]\s/.test(block));
   return firstParagraph
-    ? firstParagraph.replace(/[#*_`!\[\]()]+/g, "").slice(0, 140)
+    ? firstParagraph
+        .replace(/!\[([^\]]*)\]\([^)]+\)/g, "")
+        .replace(/[#*_`\[\]()]+/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 140)
     : "Contenido del laboratorio";
 }
 
