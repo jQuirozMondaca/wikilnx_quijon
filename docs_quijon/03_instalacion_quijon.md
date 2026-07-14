@@ -1,11 +1,11 @@
 # Instalación y configuración básica
 
-![Hardware VM](img_quijon/205843.png)
-![Reenvío de Puertos NAT](img_quijon/205903.png)
-![Hostname](img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
-![IP a](img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
+![Hardware VM](../docs_quijon/img_quijon/205843.png)
+![Reenvío de Puertos NAT](../docs_quijon/img_quijon/205903.png)
+![Hostname](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140021.png)
+![IP a](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140049.png)
 ![Apt Update](../doc_quijon//img_quijon/Captura%20de%20pantalla%202026-07-06%20210426.png)
-![UFW Status](img_quijon/Captura%20de%20pantalla%202026-07-07%20210441.png)
+![UFW Status](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20210441.png)
 
 **¿Qué es NAT?**
 NAT (Network Address Translation) es un mecanismo que permite a los dispositivos de una red privada (como nuestra VM) salir a Internet enmascarando sus direcciones IP internas detrás de una única dirección IP pública compartida por el router (o el anfitrión, en este caso).

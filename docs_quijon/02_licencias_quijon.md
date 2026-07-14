@@ -1,7 +1,7 @@
 # Software libre y licencias
 
-![Licencias](img_quijon/222723.png)
-![Preámbulo GPL](img_quijon/222819.png)
+![Licencias](../docs_quijon/img_quijon/222723.png)
+![Preámbulo GPL](../docs_quijon/img_quijon/222819.png)
 
 **¿Qué es el Software Libre?**
 Es aquel software que garantiza a los usuarios las cuatro libertades fundamentales: la libertad de ejecutar el programa para cualquier propósito, estudiar cómo funciona y modificarlo, redistribuir copias y distribuir versiones modificadas a terceros. No se refiere necesariamente a precio (gratis), sino a la libertad sobre el código fuente.

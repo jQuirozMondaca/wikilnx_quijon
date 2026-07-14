@@ -1,8 +1,8 @@
 # Permisos por línea de comandos
 
-![Creación y Permisos Base](../doc_quijon//img_quijon/Captura%20de%20pantalla%202026-07-07%20140504.png)
-![Modificación chmod/chown](img_quijon/Captura%20de%20pantalla%202026-07-07%20141142.png)
-![Permisos Especiales](img_quijon/Captura%20de%20pantalla%202026-07-07%20144443.png)
+![Creación y Permisos Base](../doc_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20140504.png)
+![Modificación chmod/chown](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20141142.png)
+![Permisos Especiales](../docs_quijon/img_quijon/Captura%20de%20pantalla%202026-07-07%20144443.png)
 
 **Traducción de permisos (-rw-rw-r--):**
 Indica que el archivo es regular (-). El dueño (user) tiene permisos de lectura y escritura (rw-). El grupo asignado (group) también tiene lectura y escritura (rw-). Cualquier otro usuario (others) solo tiene permiso de lectura (r--).
