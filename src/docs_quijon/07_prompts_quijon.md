@@ -17,7 +17,7 @@ Esta wiki fue creada para organizar el contenido del laboratorio de manera clara
 
 3. Se solicitó corrección de faltas ortográficas y ajuste al tono técnico en el informe.
 
-4. Se solicitó modificar el proyecto completo a raíz de cambios en la precentacion de la entrega, mateniendo la documentación existente en dcos_quijon.
+4. Se solicitó modificar el proyecto completo de estetica a raíz de cambios en el formatro de la entrega, mateniendo la documentación existente en dcos_quijon.
 
 5. Se reciclaron imágenes de la versión anterior para optimizar tiempos de trabajo.
 
